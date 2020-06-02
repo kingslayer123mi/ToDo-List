@@ -32,7 +32,6 @@ function addItemv2(event) {
     var ckbx=document.createElement("input");
     ckbx.type="checkbox";
     list.appendChild(ckbx);
-    ckbx.addEventListener('change',strike)
     element.appendChild(document.createTextNode(input.value));
     list.appendChild(element);
     var del_btn = document.createElement("button");
@@ -45,7 +44,5 @@ function addItemv2(event) {
         del_btn.style.display="none";
         ckbx.style.display="none";
     }
-    function strike(){
-         element.style.textDecoration="line-through"
-    }
+
     }}
